@@ -25,5 +25,7 @@ public class CurpGeneratorTest {
         cg.setEdo(sc.nextLine());
 
         sc.close();
+
+        System.out.println(cg.generator());
     }
 }

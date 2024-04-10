@@ -43,4 +43,13 @@ public class CurpGenerator {
         this.edo = edo;
     }
 
+    public String generator(){
+        String paterno = getPat().substring(0, 2).toUpperCase();
+        String materno = getMat().substring(0, 1).toUpperCase();
+        String nombre = getNombre().substring(0, 1).toUpperCase();
+        String fecha[] = getNac().split("\\/");
+        String fechaFormato = fecha[0].substring(2, 4) + fecha[1] + fecha[2];
+
+        return paterno + materno + nombre + fechaFormato;
+    }
 }
